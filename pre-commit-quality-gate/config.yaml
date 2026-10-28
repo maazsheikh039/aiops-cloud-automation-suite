@@ -1,0 +1,6 @@
+application:
+  name: precommit-lab
+  version: 1.0
+  settings:
+    debug: true
+    timeout: 30
