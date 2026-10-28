@@ -1,0 +1,2 @@
+[console_scripts]
+opsctl = opsctl.cli:main
