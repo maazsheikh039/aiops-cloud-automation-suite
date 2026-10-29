@@ -1,0 +1,12 @@
+2026-10-29 07:40:50,729 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.10.58:5000
+2026-10-29 07:40:50,730 - INFO - [33mPress CTRL+C to quit[0m
+2026-10-29 07:41:13,104 - INFO - {"timestamp": "2026-10-29T07:41:13.104593", "event_type": "user.created", "status": "success", "payload_summary": {"user_id": "12345", "username": "testuser"}}
+2026-10-29 07:41:13,105 - INFO - 127.0.0.1 - - [29/Oct/2026 07:41:13] "POST /webhook HTTP/1.1" 200 -
+2026-10-29 07:41:13,110 - INFO - {"timestamp": "2026-10-29T07:41:13.110519", "event_type": "unknown", "status": "failure_invalid_signature", "payload_summary": {}}
+2026-10-29 07:41:13,111 - INFO - 127.0.0.1 - - [29/Oct/2026 07:41:13] "[31m[1mPOST /webhook HTTP/1.1[0m" 401 -
+2026-10-29 07:41:13,121 - ERROR - Payload validation failed: 'event' is a required property
+2026-10-29 07:41:13,121 - INFO - {"timestamp": "2026-10-29T07:41:13.121209", "event_type": "unknown", "status": "failure_invalid_schema", "payload_summary": {}}
+2026-10-29 07:41:13,121 - INFO - 127.0.0.1 - - [29/Oct/2026 07:41:13] "[31m[1mPOST /webhook HTTP/1.1[0m" 400 -
