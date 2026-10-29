@@ -1,0 +1,15 @@
+ * Serving Flask app 'app'
+ * Debug mode: off
+{"asctime": "2026-10-29 05:47:22,140", "levelname": "INFO", "name": "werkzeug", "correlation_id": null, "message": "\u001b[31m\u001b[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\u001b[0m\n * Running on all addresses (0.0.0.0)\n * Running on http://127.0.0.1:5000\n * Running on http://172.31.10.238:5000", "taskName": null}
+{"asctime": "2026-10-29 05:47:22,141", "levelname": "INFO", "name": "werkzeug", "correlation_id": null, "message": "\u001b[33mPress CTRL+C to quit\u001b[0m", "taskName": null}
+{"asctime": "2026-10-29 05:47:23,788", "levelname": "INFO", "name": "root", "correlation_id": "trace-xyz-999", "message": "Starting full order processing workflow", "taskName": null, "product_id": "cloud-server-01"}
+{"asctime": "2026-10-29 05:47:23,846", "levelname": "INFO", "name": "root", "correlation_id": "trace-xyz-999", "message": "Received response from inventory service", "taskName": null, "inventory_status": {"available": true, "product_id": "cloud-server-01", "quantity": 50}}
+{"asctime": "2026-10-29 05:47:23,846", "levelname": "INFO", "name": "root", "correlation_id": "trace-xyz-999", "message": "Full order completed and confirmed", "taskName": null, "order_id": "b62750ab-8f81-4c83-b554-63e60fe5bc99"}
+{"asctime": "2026-10-29 05:47:23,847", "levelname": "INFO", "name": "werkzeug", "correlation_id": null, "message": "127.0.0.1 - - [29/Oct/2026 05:47:23] \"\u001b[35m\u001b[1mPOST /api/orders/full HTTP/1.1\u001b[0m\" 201 -", "taskName": null}
+ * Serving Flask app 'service_b'
+ * Debug mode: off
+{"asctime": "2026-10-29 05:47:22,076", "levelname": "INFO", "name": "werkzeug", "correlation_id": null, "message": "\u001b[31m\u001b[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\u001b[0m\n * Running on all addresses (0.0.0.0)\n * Running on http://127.0.0.1:5001\n * Running on http://172.31.10.238:5001", "taskName": null}
+{"asctime": "2026-10-29 05:47:22,077", "levelname": "INFO", "name": "werkzeug", "correlation_id": null, "message": "\u001b[33mPress CTRL+C to quit\u001b[0m", "taskName": null}
+{"asctime": "2026-10-29 05:47:23,793", "levelname": "INFO", "name": "root", "correlation_id": "trace-xyz-999", "message": "Checking inventory availability for product", "taskName": null, "product_id": "cloud-server-01"}
+{"asctime": "2026-10-29 05:47:23,844", "levelname": "INFO", "name": "root", "correlation_id": "trace-xyz-999", "message": "Inventory check completed successfully", "taskName": null, "product_id": "cloud-server-01", "available": true}
+{"asctime": "2026-10-29 05:47:23,845", "levelname": "INFO", "name": "werkzeug", "correlation_id": null, "message": "127.0.0.1 - - [29/Oct/2026 05:47:23] \"POST /api/inventory/check HTTP/1.1\" 200 -", "taskName": null}
