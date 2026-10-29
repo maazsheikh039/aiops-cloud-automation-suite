@@ -1,0 +1,40 @@
+# Dependency Upgrade Policy Configuration
+
+policy:
+  version: "1.0"
+  
+  update_schedule:
+    security_patches: "immediate"
+    minor_updates: "weekly"
+    major_updates: "quarterly"
+  
+  approval_requirements:
+    security: "auto-approve"
+    minor: "team-lead"
+    major: "architecture-review"
+  
+  testing_requirements:
+    security:
+      - unit_tests
+      - integration_tests
+    minor:
+      - unit_tests
+      - integration_tests
+      - smoke_tests
+    major:
+      - full_test_suite
+      - performance_tests
+      - security_audit
+  
+  allowed_licenses:
+    - MIT
+    - Apache-2.0
+    - BSD-3-Clause
+    - ISC
+  
+  blocked_packages:
+    - example-malicious-package
+  
+  version_constraints:
+    python: ">=3.8,<4.0"
+    node: ">=16.0.0,<19.0.0"

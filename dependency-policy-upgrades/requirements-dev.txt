@@ -1,0 +1,5 @@
+-r requirements.txt
+pytest==7.3.0
+pytest-cov==4.0.0
+safety==2.3.0
+pip-audit==2.5.0
