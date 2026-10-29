@@ -1,0 +1,25 @@
+[2026-10-29 07:01:44] Starting disk drill...
+Triggering disk space incident...
+Disk space incident triggered
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root         29G  8.7G   20G  31% /
+tmpfs            3.9G  1.1M  3.9G   1% /dev/shm
+tmpfs            1.6G  1.4M  1.6G   1% /run
+tmpfs            5.0M     0  5.0M   0% /run/lock
+efivarfs         128K  4.1K  119K   4% /sys/firmware/efi/efivars
+/dev/nvme0n1p16  881M  240M  580M  30% /boot
+/dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi
+tmpfs            785M  128K  785M   1% /run/user/1000
+[2026-10-29 07:01:45] Investigating disk usage using df -h and du...
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root         29G  8.7G   20G  31% /
+tmpfs            3.9G  1.1M  3.9G   1% /dev/shm
+tmpfs            1.6G  1.4M  1.6G   1% /run
+tmpfs            5.0M     0  5.0M   0% /run/lock
+efivarfs         128K  4.1K  119K   4% /sys/firmware/efi/efivars
+/dev/nvme0n1p16  881M  240M  580M  30% /boot
+/dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi
+tmpfs            785M  128K  785M   1% /run/user/1000
+[2026-10-29 07:01:45] Resolving disk full by cleaning up /tmp/disk-fill-test...
+[2026-10-29 07:01:46] Verification complete. Disk usage normalized.
+[2026-10-29 07:01:46] Drill completed successfully. Review log: drill-disk-20261029-070144.log
