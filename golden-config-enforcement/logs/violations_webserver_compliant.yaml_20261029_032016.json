@@ -1,0 +1,18 @@
+{
+  "config_name": "webserver_compliant.yaml",
+  "violations": [
+    {
+      "config": "webserver_compliant.yaml",
+      "timestamp": "2026-10-29T03:20:16.018366",
+      "differences": {
+        "values_changed": {
+          "root['service']['version']": {
+            "new_value": "1.20",
+            "old_value": "1.18+"
+          }
+        }
+      }
+    }
+  ],
+  "security_violations": []
+}
