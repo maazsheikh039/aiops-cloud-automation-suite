@@ -1,135 +1,103 @@
 # AIOps Cloud Automation Suite
 
-### Cloud Operations · Automation · Platform Engineering
+### Cloud Operations | Automation | Platform Engineering
 
-A collection of focused projects for automating and operating cloud and platform workflows. The repository brings together job orchestration, service APIs, configuration governance, observability, security controls, and delivery practices.
+A professional portfolio of engineering projects focused on cloud operations, platform automation, application reliability, governance, and observability. The repository brings together independent implementations and demonstrations, each documented in its own project directory.
 
-[![Python](https://img.shields.io/badge/Python-Projects-3776AB?logo=python&logoColor=white)](#technology-overview)
-[![Automation](https://img.shields.io/badge/Focus-Automation-7357D5)](#project-areas)
-[![Observability](https://img.shields.io/badge/Focus-Observability-EE7623)](#project-areas)
+## Overview
 
----
-
-## At a Glance
-
-| Projects | Project areas | Technologies |
+| Projects | Core domains | Representative technologies |
 |:--:|:--|:--|
-| **25** | APIs, automation, configuration, security, observability, reliability, delivery | Python, Bash, Node.js, Docker, PostgreSQL, SQLite, Redis, Prometheus, Grafana |
-
-## Project Areas
-
-| Area | What you will find |
-|---|---|
-| **APIs & Services** | Health and policy endpoints, job history, command-line API access, and webhook handling |
-| **Automation & Orchestration** | Async task execution, dependency-aware pipelines, background workers, and deployment smoke checks |
-| **Configuration & Governance** | Typed configuration, template generation, drift detection, and golden configuration checks |
-| **Observability & Incident Response** | Prometheus metrics, Grafana monitoring setup, structured correlation logs, and incident drills |
-| **Reliability & Delivery** | Resilient HTTP requests, dependency checks, artifact metadata, database migration procedures, quality gates, and test strategy |
-| **Containers & Data** | Docker Compose services, PostgreSQL job tracking, Redis queues, and SQLite-backed job history |
+| **38** | Automation, services, governance, security, observability, and delivery | Python, Bash, Node.js, Docker, Redis, PostgreSQL, Prometheus, Grafana, InfluxDB |
 
 ## Project Directory
 
-### APIs & Services
+### Automation and Workflow Engineering
 
-| Project | Overview |
+| Project | Description |
+|---|---|
+| [Asynchronous Execution Engine](async-execution-engine/) | Python asyncio worker pool for queued tasks, lifecycle tracking, cancellation, and execution statistics. |
+| [Automation Platform](automation-platform/) | Flask API, Celery workers, Redis queue, policy validation, and Click command-line interface. |
+| [AI-Assisted Runbook Generator](ai-runbook-generator/) | Collects Linux system information and uses a local Ollama model to generate operational runbook documents. |
+| [AI Test Suggestion Pipeline](ai-test-pipeline/) | Analyzes Git changes and Python syntax trees to produce prioritized test recommendations. |
+| [CI Failure Triage Assistant](ci-triage-assistant/) | Applies configurable patterns to CI logs and extracts error context for investigation. |
+| [Dependency-Aware Pipeline Runner](pipeline-runner/) | Executes YAML-defined jobs according to dependencies and reports cycle or failure conditions. |
+| [Worker Service](worker-service/) | Flask job API and SQLite-backed queue for background operational tasks. |
+| [Opsctl CLI](opsctl-core/) | Modular command-line interface for operational status, deployment, and configuration tasks. |
+| [Smoke Test Pipeline](smoke-test-pipeline/) | Shell-based deployment flow with health and API endpoint checks for a Node.js service. |
+
+### APIs, Applications, and Data
+
+| Project | Description |
 |---|---|
 | [FastAPI Status and Policy Service](fastapi-status-policy-service/) | Health and system metrics endpoints with request validation, policy checks, and request logging. |
 | [Job History API](job-history-api/) | Flask and SQLAlchemy API for filtering job runs and returning execution statistics. |
+| [Job Registry with PostgreSQL](job-registry-postgresql/) | PostgreSQL schema and Python job manager for job states and execution metadata. |
 | [CLI and API Integration](cli-api-integration/) | Authenticated REST requests through a Python command-line interface. |
-| [Secure Webhook Receiver](secure-webhook-receiver/) | Flask webhook endpoint with HMAC-SHA256 signature checks, JSON schema validation, and sanitized event logging. |
+| [Secure Webhook Receiver](secure-webhook-receiver/) | Flask endpoint with HMAC signature verification, JSON schema validation, and filtered event logging. |
+| [Containerized Microservices](containerize-microservices/) | Docker Compose Flask API and worker services using Redis for task and result storage. |
 
-### Automation & Orchestration
+### Configuration, Security, and Governance
 
-| Project | Overview |
+| Project | Description |
 |---|---|
-| [Async Execution Engine](async-execution-engine/) | Python asyncio worker pool with queued tasks, lifecycle states, and execution statistics. |
-| [Pipeline Runner](pipeline-runner/) | YAML-configured jobs with dependency ordering, cycle checks, and downstream failure handling. |
-| [Worker Service](worker-service/) | Flask API and SQLite-backed queue for asynchronous operational jobs. |
-| [Opsctl CLI](opsctl-core/) | Modular Python CLI for status, deployment, and local configuration commands. |
-| [Smoke Test Pipeline](smoke-test-pipeline/) | Shell-driven deployment flow that checks a Node.js service's health and API endpoints. |
+| [Configuration Generator](config-generator/) | Generates environment-specific configuration from Jinja2 templates and YAML inputs, with schema checks. |
+| [Typed Configuration Loader](typed-config-loader/) | Loads JSON and YAML configuration with Pydantic validation. |
+| [Configuration Drift Scanner](config-drift-scanner/) | Compares system and application configuration with baselines and generates reports. |
+| [Golden Configuration Enforcement](golden-config-enforcement/) | Compares current configuration with reference files and applies security policy checks. |
+| [Dependency Policy and Safe Upgrades](dependency-policy-upgrades/) | Dependency policies, vulnerability scanning, validation tests, and upgrade recovery scripts. |
+| [Compliance Evidence Generator](compliance-lab/) | Collects system evidence and produces structured JSON, HTML, and CSV reports. |
+| [Multi-Profile Policy Gate](policy-gate-lab/) | Applies YAML-defined policy profiles through a lightweight HTTP service. |
+| [Finance Approval Workflow](finance-approval-lab/approval-system/) | Threshold-based approval routing, multiple approvers, persisted request status, and audit events. |
+| [Exploit Remediation and Regression Tests](exploit-fix-test/) | Demonstrates SQL injection remediation with parameterized queries and regression tests. |
+| [Healthcare Log Sanitization](healthcare-logging-lab/) | Uses synthetic telemetry and masking checks to demonstrate handling of sensitive log fields. |
 
-### Configuration & Governance
+### Observability and Incident Response
 
-| Project | Overview |
+| Project | Description |
 |---|---|
-| [Configuration Generator](config-generator/) | Jinja2 templates and YAML inputs for generating environment-specific configuration, with schema checks. |
-| [Typed Configuration Loader](typed-config-loader/) | JSON/YAML configuration parsing with Pydantic validation. |
-| [Configuration Drift Scanner](config-drift-scanner/) | Baseline comparisons for system and application configuration with JSON/text reports. |
-| [Golden Configuration Enforcement](golden-config-enforcement/) | Configuration comparison and security policy checks against known-good files. |
-
-### Observability & Incident Response
-
-| Project | Overview |
-|---|---|
-| [Prometheus Metrics Instrumentation](prometheus-metrics-instrumentation/) | Flask service exposing request counters, latency histograms, gauges, health, and a `/metrics` endpoint. |
+| [Prometheus Metrics Instrumentation](prometheus-metrics-instrumentation/) | Flask application with request counters, latency histograms, gauges, health endpoint, and `/metrics`. |
 | [Grafana Dashboard Evidence](grafana-dashboard-evidence/) | Prometheus and Node Exporter configuration with operational monitoring evidence files. |
-| [Structured Logging & Correlation](structured-logging-correlation/) | JSON logs and correlation ID propagation across two Flask services, with a log analysis utility. |
-| [Simulated Incident Drill](simulated-incident-drill/) | Bash/Python exercises for disk, service, and CPU incident response with action logs. |
+| [Structured Logging and Correlation](structured-logging-correlation/) | JSON logging and correlation ID propagation across Flask services, with a log analysis utility. |
+| [Simulated Incident Response](simulated-incident-drill/) | Bash and Python exercises for disk, service, and CPU incidents with action logs. |
+| [Energy Telemetry and Threshold Detection](energy-pack-lab/energy-pack-lab/) | InfluxDB, Telegraf, and Kapacitor configuration for simulated energy metrics and threshold alerts. |
+| [Manufacturing Telemetry and Downtime Alerts](manufacturing-monitor/) | InfluxDB telemetry collection, heartbeat-based downtime checks, and alert cooldown handling. |
 
-### Reliability, Data & Delivery
+### Reliability, Delivery, and Engineering Practices
 
-| Project | Overview |
+| Project | Description |
 |---|---|
-| [Containerized Microservices](containerize-microservices/) | Docker Compose Flask API and worker services using Redis as a task queue and result store. |
-| [Job Registry with PostgreSQL](job-registry-postgresql/) | PostgreSQL schema and Python job manager for job state transitions and execution metadata. |
 | [Resilient HTTP Client](resilient-http-client/) | Requests-based client with timeouts, retry backoff, and optional circuit-breaker integration. |
-| [Dependency Policy & Safe Upgrades](dependency-policy-upgrades/) | Dependency policy configuration, vulnerability scanning commands, tests, and upgrade/rollback scripts. |
-| [Build and Version Artifacts](build-version-artifacts/) | Bash scripts for semantic versions, tarball builds, SHA-256 metadata, and Git tags. |
+| [Build and Version Artifacts](build-version-artifacts/) | Bash release scripts for semantic versions, tarball builds, SHA-256 metadata, and Git tags. |
 | [Migration and Rollback Runbook](migration-rollback-runbook/) | PostgreSQL migration, pre-check, backup, restore, and validation scripts. |
-| [Pre-commit Quality Gates](pre-commit-quality-gate/) | Configuration and sample app for local formatting, linting, security, and file checks. |
-| [Test Strategy Upgrade](test-strategy-upgrade/) | Python unit/integration test structure using pytest and coverage reporting. |
+| [Pre-commit Quality Gates](pre-commit-quality-gate/) | Local formatting, linting, security scanning, and file quality checks. |
+| [Test Strategy](test-strategy-upgrade/) | Python unit and integration test structure using pytest and coverage reporting. |
+| [AI-Driven Refactoring and Quality Metrics](ai-refactor-lab/) | Uses static analysis and tests to assess refactoring changes and code quality metrics. |
+| [Retail Deployment Gate and Rollback](retail-deployment-lab/) | Deployment health checks and rollback-oriented scripts for a containerized service workflow. |
 
 ## Technology Overview
 
-**Languages:** Python, Bash, JavaScript  
-**Web and API frameworks:** Flask, FastAPI  
-**Containers and data:** Docker Compose, Redis, PostgreSQL, SQLite  
-**Observability:** Prometheus, Node Exporter, Grafana, JSON logging  
-**Configuration and validation:** YAML, JSON Schema, Pydantic, Jinja2  
-**Quality and security tooling:** pytest, pre-commit, Bandit, Safety, pip-audit
+- **Languages:** Python, Bash, JavaScript
+- **Web and API frameworks:** Flask, FastAPI
+- **Task processing and data:** Celery, Redis, PostgreSQL, SQLite, InfluxDB
+- **Containers and monitoring:** Docker, Prometheus, Node Exporter, Grafana, Telegraf, Kapacitor
+- **AI-assisted workflows:** Ollama and local language models
+- **Configuration and validation:** YAML, JSON Schema, Pydantic, Jinja2
+- **Testing and security tooling:** pytest, pre-commit, Bandit, Safety, pip-audit
+
+Technology choices and prerequisites vary by project; the list above describes tools used across the repository and does not imply a shared runtime.
 
 ## Getting Started
 
-Clone the repository and choose a project directory:
+Clone the repository and open the project you want to explore:
 
 ```bash
 git clone https://github.com/maazsheikh039/aiops-cloud-automation-suite.git
 cd aiops-cloud-automation-suite
 ```
 
-Each project is maintained in its own folder and has its own README. Review that project's prerequisites and instructions before installing dependencies or running scripts. Some examples require services such as Docker, Redis, PostgreSQL, Prometheus, or Grafana.
+Each project directory contains its own README with setup requirements and operating instructions. Review those instructions before installing dependencies or running scripts. Several projects require external services or system utilities, such as Redis, PostgreSQL, Docker, Prometheus, Grafana, or InfluxDB.
 
-## Repository Structure
+## Repository Scope
 
-```text
-aiops-cloud-automation-suite/
-├── async-execution-engine/
-├── build-version-artifacts/
-├── cli-api-integration/
-├── config-drift-scanner/
-├── config-generator/
-├── containerize-microservices/
-├── dependency-policy-upgrades/
-├── fastapi-status-policy-service/
-├── golden-config-enforcement/
-├── grafana-dashboard-evidence/
-├── job-history-api/
-├── job-registry-postgresql/
-├── migration-rollback-runbook/
-├── opsctl-core/
-├── pipeline-runner/
-├── pre-commit-quality-gate/
-├── prometheus-metrics-instrumentation/
-├── resilient-http-client/
-├── secure-webhook-receiver/
-├── simulated-incident-drill/
-├── smoke-test-pipeline/
-├── structured-logging-correlation/
-├── test-strategy-upgrade/
-├── typed-config-loader/
-└── worker-service/
-```
-
-## Scope & License
-
-These are independent projects and examples; they do not share a suite-wide installer or runtime. Check each project README for its local setup and constraints. No repository-wide license file was present during this review.
+This repository is a collection of independent projects and technical demonstrations. It does not provide a suite-wide installer or a single command to run every project. No repository-wide license file was present during this review.
