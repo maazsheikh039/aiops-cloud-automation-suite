@@ -27,3 +27,13 @@
 [2026-10-30 12:11:29,224: WARNING/ForkPoolWorker-2] [2026-10-30T12:11:29.224269] Starting task 20261030-40d8d001 of type 'backup'
 [2026-10-30 12:11:31,315: INFO/ForkPoolWorker-1] Task workers.task_worker.execute_automation_task[20261030-1b31ace6] succeeded in 3.027794044000018s: {'task_id': '20261030-1b31ace6', 'task_type': 'backup', 'parameters': {'path': '/data', 'destination': '/backup'}, 'status': 'COMPLETED', 'updated_at': '2026-10-30T12:11:31.308434', 'result': 'Successfully backed up /data to /backup'}
 [2026-10-30 12:11:32,248: INFO/ForkPoolWorker-2] Task workers.task_worker.execute_automation_task[20261030-40d8d001] succeeded in 3.024730611999985s: {'task_id': '20261030-40d8d001', 'task_type': 'backup', 'parameters': {'path': '/data', 'destination': '/backup'}, 'status': 'COMPLETED', 'updated_at': '2026-10-30T12:11:32.241415', 'result': 'Successfully backed up /data to /backup'}
+
+worker: Hitting Ctrl+C again will initiate cold shutdown, terminating all running tasks!
+
+worker: Warm shutdown (MainProcess)
+
+worker: Hitting Ctrl+C again will terminate all running tasks!
+
+Waiting gracefully for cold shutdown to complete...
+
+worker: Cold shutdown (MainProcess)
