@@ -1,14 +1,30 @@
-# AIOps Cloud Automation Suite
+<div align="center">
 
-### Cloud Operations | Automation | Platform Engineering
+<h1>AIOps Cloud Automation Suite</h1>
 
-A professional portfolio of engineering projects focused on cloud operations, platform automation, application reliability, governance, and observability. The repository brings together independent implementations and demonstrations, each documented in its own project directory.
+<p><strong>Cloud Operations · Automation · Platform Engineering</strong></p>
 
-## Overview
+<p>A professional portfolio of engineering projects focused on cloud operations, platform automation, application reliability, governance, and observability.</p>
 
-| Projects | Core domains | Representative technologies |
-|:--:|:--|:--|
-| **38** | Automation, services, governance, security, observability, and delivery | Python, Bash, Node.js, Docker, Redis, PostgreSQL, Prometheus, Grafana, InfluxDB |
+<p>
+<a href="#project-directory"><img src="https://img.shields.io/badge/Explore-38%20Projects-2563EB?style=for-the-badge" alt="Explore 38 Projects"></a>
+<a href="#technology-overview"><img src="https://img.shields.io/badge/Technology-Overview-475569?style=for-the-badge" alt="Technology Overview"></a>
+<a href="#getting-started"><img src="https://img.shields.io/badge/Getting-Started-0F766E?style=for-the-badge" alt="Getting Started"></a>
+</p>
+
+<table align="center">
+<tr>
+<td align="center"><strong>38</strong><br>Projects</td>
+<td align="center"><strong>5</strong><br>Engineering Areas</td>
+<td align="center"><strong>Independent</strong><br>Project Setups</td>
+</tr>
+</table>
+
+<p><a href="#automation-and-workflow-engineering">Automation</a> · <a href="#apis-applications-and-data">APIs &amp; Services</a> · <a href="#configuration-security-and-governance">Governance</a> · <a href="#observability-and-incident-response">Observability</a> · <a href="#reliability-delivery-and-engineering-practices">Reliability &amp; Delivery</a></p>
+
+</div>
+
+---
 
 ## Project Directory
 
