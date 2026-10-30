@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-10-30T08:04:04.481601",
+  "hostname": "ip-172-31-10-135",
+  "system_info": {
+    "os_release": {
+      "PRETTY_NAME": "Ubuntu 24.04.3 LTS",
+      "NAME": "Ubuntu",
+      "VERSION_ID": "24.04",
+      "VERSION": "24.04.3 LTS (Noble Numbat)",
+      "VERSION_CODENAME": "noble",
+      "ID": "ubuntu",
+      "ID_LIKE": "debian",
+      "HOME_URL": "https://www.ubuntu.com/",
+      "SUPPORT_URL": "https://help.ubuntu.com/",
+      "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+      "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "UBUNTU_CODENAME": "noble",
+      "LOGO": "ubuntu-logo"
+    },
+    "kernel": "6.14.0-1018-aws",
+    "cpu_info": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  2\nOn-line CPU(s) list:                     0,1\nVendor ID:                               AuthenticAMD\nModel name:                              AMD EPYC 7571\nCPU family:                              23\nModel:                   ",
+    "memory": "               total        used        free      shared  buff/cache   available\nMem:           7.7Gi       2.8Gi       187Mi        14Mi       5.0Gi       4.8Gi\nSwap:             0B          0B          0B\n"
+  },
+  "services": [
+    {
+      "service": "ssh",
+      "active_status": "active",
+      "details": "\u25cf ssh.service - OpenBSD Secure Shell server\n     Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: enabled)\n    Drop-In: /usr/lib/systemd/system/ssh.service.d\n             \u2514\u2500ec2-instance-connect.conf\n     Active: active (running) since Fri 2026-10-30 07:59:50 UTC; 4min 13s ago\nT"
+    },
+    {
+      "service": "cron",
+      "active_status": "active",
+      "details": "\u25cf cron.service - Regular background program processing daemon\n     Loaded: loaded (/usr/lib/systemd/system/cron.service; enabled; preset: enabled)\n     Active: active (running) since Fri 2026-10-30 07:59:50 UTC; 4min 14s ago\n       Docs: man:cron(8)\n   Main PID: 6065 (cron)\n      Tasks: 1 (limit: 91"
+    }
+  ],
+  "network": {
+    "interfaces": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host noprefixroute \n       valid_lft forever preferred_lft forever\n2: ens5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9001 qdisc mq state UP group default qlen 1000\n    link/ether 0a:ff:da:4f:c4:55 brd ff:ff:ff:ff:ff:ff\n    altname enp0s5\n    inet 172.31.10.135/24 brd 172.31.10.255 scope global dynamic noprefixroute ens5\n       valid_lft 3154sec preferred_lft 3154sec\n    inet6 fe80::8ff:daff:fe4f:c455/64 scope link \n       valid_lft forever preferred_lft forever\n3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default \n    link/ether 02:cf:bd:38:50:73 brd ff:ff:ff:ff:ff:ff\n    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0\n       valid_lft forever preferred_lft forever\n",
+    "listening_ports": "Netid State  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess\nudp   UNCONN 0      0         127.0.0.54:53         0.0.0.0:*          \nudp   UNCONN 0      0      127.0.0.53%lo:53         0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:8443       0.0.0.0:*          \nudp   UNCONN 0      0          127.0.0.1:323        0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:5353       0.0.0.0:*          \nudp   UNCONN 0      0            0.0.0.0:51142      0.0.0.0:*          \nudp   UNCONN 0      0               [::]:40278         [::]:*          \nudp   UNCONN 0      0               [::]:8443          [::]:*          \nudp   UNCONN 0      0              [::1]:323           [::]:*          \nudp   UNCONN 0      0               [::]:5353          [::]:*          \ntcp   LISTEN 0      4096         0.0.0.0:22         0.0.0.0:*          \ntcp   LISTEN 0      10           0.0.0.0:8443       0.0.0.0:*          \ntcp   LISTEN 0      4096      127.0.0.54:53         0.0.0.0:*   "
+  },
+  "disk": {
+    "usage": "Filesystem       Size  Used Avail Use% Mounted on\n/dev/root         29G   12G   17G  41% /\ntmpfs            3.9G  8.0K  3.9G   1% /dev/shm\ntmpfs            1.6G  1.4M  1.6G   1% /run\ntmpfs            5.0M     0  5.0M   0% /run/lock\nefivarfs         128K  4.1K  119K   4% /sys/firmware/efi/efivars\n/dev/nvme0n1p16  881M  240M  580M  30% /boot\n/dev/nvme0n1p15  105M  6.2M   99M   6% /boot/efi\ntmpfs            785M  128K  785M   1% /run/user/1000\n"
+  }
+}

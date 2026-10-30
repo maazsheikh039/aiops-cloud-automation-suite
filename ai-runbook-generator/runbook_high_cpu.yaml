@@ -1,0 +1,13 @@
+created: '2026-10-30T08:06:04.990306'
+hostname: ip-172-31-10-135
+kernel: 6.14.0-1018-aws
+memory: Checked via system collector
+os_version: Ubuntu 24.04.3 LTS
+prerequisites: Root access / sudo privileges, SSH access, monitoring tool permissions.
+procedure: 'Error connecting to Ollama service: HTTPConnectionPool(host=''localhost'',
+  port=11434): Read timed out. (read timeout=120)'
+rollback: Revert configuration changes, restart affected services, or restore from
+  snapshot if failure persists.
+scenario: CPU usage is at 95% and application is slow
+title: 'Incident Response Runbook: Cpu Usage Is At 95% And Application Is Slow'
+verification: Run health checks, verify service responsiveness and CPU/disk metrics.
