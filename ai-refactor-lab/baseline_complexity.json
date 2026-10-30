@@ -1,0 +1,1 @@
+{"legacy_calculator.py": [{"type": "function", "rank": "C", "name": "calculate_total", "lineno": 1, "col_offset": 0, "complexity": 14, "endline": 41, "closures": []}, {"type": "function", "rank": "A", "name": "process_order", "lineno": 43, "col_offset": 0, "complexity": 5, "endline": 62, "closures": []}]}
