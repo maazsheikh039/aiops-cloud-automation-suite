@@ -1,0 +1,194 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Compliance Evidence Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #2c3e50; color: white; }
+                .summary-card { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+            </style>
+        </head>
+        <body>
+            <h1>Compliance Evidence Report</h1>
+            <div class="summary-card">
+                <p><strong>Generated At:</strong> 2026-10-30T11:46:42.022451</p>
+                <p><strong>Framework:</strong> NIST 800-53</p>
+                <p><strong>Total Evidence Collections:</strong> 3</p>
+            </div>
+            <h2>Collected Evidence Details</h2>
+        <h3>Type: system_logs (Timestamp: 2026-10-30T11:46:41.872124)</h3><pre style='background:#f1f1f1; padding:10px; border-radius:4px;'>{
+  "recent_journal_logs": [
+    "Oct 30 11:43:08 ip-172-31-10-238 systemd-networkd[6099]: ens5: Link UP",
+    "Oct 30 11:43:08 ip-172-31-10-238 systemd-networkd[6099]: ens5: Gained carrier",
+    "Oct 30 11:43:08 ip-172-31-10-238 rsyslogd[6097]: rsyslogd's groupid changed to 102",
+    "Oct 30 11:43:08 ip-172-31-10-238 rsyslogd[6097]: rsyslogd's userid changed to 102",
+    "Oct 30 11:43:08 ip-172-31-10-238 rsyslogd[6097]: [origin software=\"rsyslogd\" swVersion=\"8.2312.0\" x-pid=\"6097\" x-info=\"https://www.rsyslog.com\"] start",
+    "Oct 30 11:43:08 ip-172-31-10-238 systemd-networkd[6099]: docker0: Link UP",
+    "Oct 30 11:43:08 ip-172-31-10-238 systemd-networkd[6099]: ens5: Gained IPv6LL",
+    "Oct 30 11:43:08 ip-172-31-10-238 systemd-networkd[6099]: Enumeration completed",
+    "Oct 30 11:43:08 ip-172-31-10-238 systemd[1]: Started systemd-networkd.service - Network Configuration.",
+    "Oct 30 11:43:08 ip-172-31-10-238 ModemManager[6131]: <msg> ModemManager (version 1.23.4) starting in system bus...",
+    "Oct 30 11:43:09 ip-172-31-10-238 accounts-daemon[5908]: started daemon version 23.13.9",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd[1]: Started accounts-daemon.service - Accounts Service.",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd-resolved[6014]: Using system hostname 'ip-172-31-10-238'.",
+    "Oct 30 11:43:09 ip-172-31-10-238 polkitd[5988]: Registered Authentication Agent for unix-session:1 (system bus name :1.42 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale C.UTF-8)",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd[1]: Started systemd-resolved.service - Network Name Resolution.",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd[1]: Started power-profiles-daemon.service - Power Profiles daemon.",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd[1]: Started packagekit.service - PackageKit Daemon.",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd[1]: Started ModemManager.service - Modem Manager.",
+    "Oct 30 11:43:09 ip-172-31-10-238 systemd[1]: Started udisks2.service - Disk Manager.",
+    "Oct 30 11:43:09 ip-172-31-10-238 udisksd[6015]: Acquired the name org.freedesktop.UDisks2 on the system message bus",
+    "Oct 30 11:43:09 ip-172-31-10-238 NetworkManager[693]: <info>  [1793360589.6131] modem-manager: ModemManager now available",
+    "Oct 30 11:43:12 ip-172-31-10-238 sudo[3756]: pam_unix(sudo:session): session closed for user root",
+    "Oct 30 11:43:12 ip-172-31-10-238 chronyd[6074]: Selected source 169.254.169.123",
+    "Oct 30 11:43:12 ip-172-31-10-238 chronyd[6074]: System clock TAI offset set to 37 seconds",
+    "Oct 30 11:43:13 ip-172-31-10-238 ModemManager[6131]: <msg> [base-manager] couldn't check support for device '/sys/devices/pci0000:00/0000:00:05.0': not supported by any plugin",
+    "Oct 30 11:43:17 ip-172-31-10-238 irqbalance[5936]: Cannot change IRQ 27 affinity: Success",
+    "Oct 30 11:43:17 ip-172-31-10-238 irqbalance[5936]: IRQ 27 affinity is now unmanaged",
+    "Oct 30 11:43:18 ip-172-31-10-238 tracker-miner-fs-3[6371]: (tracker-extract-3:6371): GLib-GIO-WARNING **: 11:43:18.138: Error creating IO channel for /proc/self/mountinfo: Invalid argument (g-io-error-quark, 13)",
+    "Oct 30 11:44:54 ip-172-31-10-238 dbus-daemon[1826]: [session uid=1000 pid=1826] Activating service name='org.gnome.DejaDup' requested by ':1.100' (uid=1000 pid=5765 comm=\"/usr/libexec/deja-dup/deja-dup-monitor\" label=\"unconfined\")",
+    "Oct 30 11:44:54 ip-172-31-10-238 dbus-daemon[1826]: [session uid=1000 pid=1826] Successfully activated service 'org.gnome.DejaDup'",
+    "Oct 30 11:44:54 ip-172-31-10-238 org.gnome.DejaDup[6755]: Failed to register: Unable to acquire bus name 'org.gnome.DejaDup'",
+    "Oct 30 11:44:55 ip-172-31-10-238 dbus-daemon[1826]: [session uid=1000 pid=1826] Activating service name='org.gnome.DejaDup' requested by ':1.100' (uid=1000 pid=5765 comm=\"/usr/libexec/deja-dup/deja-dup-monitor\" label=\"unconfined\")",
+    "Oct 30 11:44:55 ip-172-31-10-238 dbus-daemon[1826]: [session uid=1000 pid=1826] Successfully activated service 'org.gnome.DejaDup'",
+    "Oct 30 11:44:57 ip-172-31-10-238 irqbalance[5936]: Cannot change IRQ 26 affinity: Permission denied",
+    "Oct 30 11:44:57 ip-172-31-10-238 irqbalance[5936]: IRQ 26 affinity is now unmanaged",
+    "Oct 30 11:44:58 ip-172-31-10-238 pkexec[6800]: pam_unix(polkit-1:session): session opened for user root(uid=0) by ubuntu(uid=1000)",
+    "Oct 30 11:44:58 ip-172-31-10-238 pkexec[6800]: ubuntu: Executing command [USER=root] [TTY=unknown] [CWD=/home/ubuntu] [COMMAND=/usr/lib/update-notifier/package-system-locked]",
+    "Oct 30 11:44:59 ip-172-31-10-238 update-notifier.desktop[6809]: [90B blob data]",
+    "Oct 30 11:44:59 ip-172-31-10-238 update-notifier.desktop[6809]: [163B blob data]",
+    "Oct 30 11:44:59 ip-172-31-10-238 update-notifier.desktop[6809]: [101B blob data]",
+    "Oct 30 11:45:01 ip-172-31-10-238 CRON[6812]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)",
+    "Oct 30 11:45:01 ip-172-31-10-238 CRON[6813]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)",
+    "Oct 30 11:45:01 ip-172-31-10-238 CRON[6812]: pam_unix(cron:session): session closed for user root",
+    "Oct 30 11:45:21 ip-172-31-10-238 systemd[1]: Starting update-notifier-download.service - Download data for packages that failed at package install time...",
+    "Oct 30 11:45:21 ip-172-31-10-238 systemd[1]: update-notifier-download.service: Deactivated successfully.",
+    "Oct 30 11:45:21 ip-172-31-10-238 systemd[1]: Finished update-notifier-download.service - Download data for packages that failed at package install time.",
+    "Oct 30 11:45:45 ip-172-31-10-238 systemd[1802]: launchpadlib-cache-clean.service - Clean up old files in the Launchpadlib cache was skipped because of an unmet condition check (ConditionPathExists=/home/ubuntu/.launchpadlib/api.launchpad.net/cache).",
+    "Oct 30 11:46:40 ip-172-31-10-238 compliance-test[7516]: Sample security event: User authentication",
+    "Oct 30 11:46:40 ip-172-31-10-238 compliance-test[7517]: Sample system event: Service started",
+    "Oct 30 11:46:40 ip-172-31-10-238 compliance-test[7518]: Sample access event: File accessed"
+  ],
+  "running_services_sample": [
+    "  UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION",
+    "  accounts-daemon.service                        loaded active running Accounts Service",
+    "  acpid.service                                  loaded active running ACPI event daemon",
+    "  amazon-cloudwatch-agent.service                loaded active running Amazon CloudWatch Agent",
+    "  anacron.service                                loaded active running Run anacron jobs",
+    "  atd.service                                    loaded active running Deferred execution scheduler",
+    "  avahi-daemon.service                           loaded active running Avahi mDNS/DNS-SD Stack",
+    "  chrony.service                                 loaded active running chrony, an NTP client/server",
+    "  colord.service                                 loaded active running Manage, Install and Generate Color Profiles",
+    "  containerd.service                             loaded active running containerd container runtime",
+    "  cron.service                                   loaded active running Regular background program processing daemon",
+    "  dbus.service                                   loaded active running D-Bus System Message Bus",
+    "  dcvserver.service                              loaded active running Amazon DCV server daemon",
+    "  dcvsessionlauncher.service                     loaded active running Amazon DCV session launcher daemon",
+    "  docker.service                                 loaded active running Docker Application Container Engine",
+    "  gdm.service                                    loaded active running GNOME Display Manager",
+    "  health-monitor.service                         loaded active running Enhanced Health Monitor (900s intervals)",
+    "  irqbalance.service                             loaded active running irqbalance daemon",
+    "  kerneloops.service                             loaded active running Tool to automatically collect and submit kernel crash signatures",
+    "  ModemManager.service                           loaded active running Modem Manager",
+    "  multipathd.service                             loaded active running Device-Mapper Multipath Device Controller",
+    "  networkd-dispatcher.service                    loaded active running Dispatcher daemon for systemd-networkd",
+    "  NetworkManager.service                         loaded active running Network Manager",
+    "  packagekit.service                             loaded active running PackageKit Daemon",
+    "  polkit.service                                 loaded active running Authorization Manager",
+    "  power-profiles-daemon.service                  loaded active running Power Profiles daemon",
+    "  rsyslog.service                                loaded active running System Logging Service",
+    "  rtkit-daemon.service                           loaded active running RealtimeKit Scheduling Policy Service",
+    "  serial-getty@ttyS0.service                     loaded active running Serial Getty on ttyS0",
+    "  snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent"
+  ]
+}</pre><h3>Type: access_logs (Timestamp: 2026-10-30T11:46:41.940776)</h3><pre style='background:#f1f1f1; padding:10px; border-radius:4px;'>{
+  "last_logins": [
+    "ubuntu   pts/0        202.47.46.167    Fri Oct 30 11:41   still logged in",
+    "ubuntu   :0           :0               Fri Oct 30 11:40   still logged in",
+    "ubuntu   seat0        login screen     Fri Oct 30 11:40   still logged in",
+    "reboot   system boot  6.14.0-1018-aws  Fri Oct 30 11:40   still running",
+    "ubuntu   pts/0        154.192.51.197   Fri Jun 19 18:23 - crash (132+17:17)",
+    "ubuntu   :0           :0               Fri Jun 19 18:16 - crash (132+17:23)",
+    "ubuntu   seat0        login screen     Fri Jun 19 18:16 - crash (132+17:24)",
+    "reboot   system boot  6.14.0-1018-aws  Fri Jun 19 18:15   still running",
+    "ubuntu   pts/0        154.192.2.6      Sat Jan 24 06:08 - crash (146+12:06)",
+    "ubuntu   :0           :0               Sat Jan 24 06:07 - crash (146+12:08)",
+    "ubuntu   seat0        login screen     Sat Jan 24 06:07 - crash (146+12:08)",
+    "reboot   system boot  6.14.0-1018-aws  Sat Jan 24 06:06   still running",
+    "ubuntu   pts/0        154.192.1.10     Sat Jan 10 13:26 - crash (13+16:40)",
+    "ubuntu   :0           :0               Sat Jan 10 13:24 - crash (13+16:42)",
+    "ubuntu   seat0        login screen     Sat Jan 10 13:24 - crash (13+16:42)",
+    "reboot   system boot  6.14.0-1018-aws  Sat Jan 10 13:23   still running",
+    "ubuntu   pts/0        154.192.1.78     Sat Jan 10 10:03 - crash  (03:19)",
+    "ubuntu   :0           :0               Sat Jan 10 10:00 - crash  (03:22)",
+    "ubuntu   seat0        login screen     Sat Jan 10 10:00 - crash  (03:22)",
+    "reboot   system boot  6.14.0-1018-aws  Sat Jan 10 10:00   still running",
+    "",
+    "wtmp begins Wed Dec  3 13:16:24 2025"
+  ],
+  "current_users": [
+    "ubuntu   seat0        2026-10-30 11:40 (login screen)",
+    "ubuntu   :0           2026-10-30 11:40 (:0)",
+    "ubuntu   pts/0        2026-10-30 11:41 (202.47.46.167)"
+  ]
+}</pre><h3>Type: configuration_snapshots (Timestamp: 2026-10-30T11:46:41.948444)</h3><pre style='background:#f1f1f1; padding:10px; border-radius:4px;'>{
+  "network_config": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host noprefixroute \n       valid_lft forever preferred_lft forever\n2: ens5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9001 qdisc mq state UP group default qlen 1000\n    link/ether 0a:ff:e2:0b:34:2d brd ff:ff:ff:ff:ff:ff\n    altname enp0s5\n    inet 172.31.10.238/24 brd 172.31.10.255 scope global dynamic noprefixroute ens5\n       valid_lft 3230sec preferred_lft 3230sec\n    inet6 fe80::8ff:e2ff:fe0b:342d/64 scope link \n       valid_lft forever preferred_lft forever\n3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default \n    link/ether fa:21:d3:92:34:95 brd ff:ff:ff:ff:ff:ff\n    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0\n       valid_lft forever preferred_lft forever\n",
+  "installed_packages_sample": [
+    "Desired=Unknown/Install/Remove/Purge/Hold",
+    "| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend",
+    "|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)",
+    "||/ Name                                          Version                                  Architecture Description",
+    "+++-=============================================-========================================-============-================================================================================",
+    "ii  accountsservice                               23.13.9-2ubuntu6                         amd64        query and manipulate user account information",
+    "ii  acl                                           2.3.2-1build1.1                          amd64        access control list - utilities",
+    "ii  acpid                                         1:2.0.34-1ubuntu2                        amd64        Advanced Configuration and Power Interface event daemon",
+    "ii  adduser                                       3.137ubuntu1                             all          add and remove users and groups",
+    "ii  adwaita-icon-theme                            46.0-1                                   all          default icon theme of GNOME",
+    "ii  alsa-base                                     1.0.25+dfsg-0ubuntu7                     all          ALSA driver configuration files",
+    "ii  alsa-topology-conf                            1.2.5.1-2                                all          ALSA topology configuration files",
+    "ii  alsa-ucm-conf                                 1.2.10-1ubuntu5.7                        all          ALSA Use Case Manager configuration files",
+    "ii  alsa-utils                                    1.2.9-1ubuntu5                           amd64        Utilities for configuring and using ALSA",
+    "ii  amazon-cloudwatch-agent                       1.300062.0b1304-1                        amd64        Amazon CloudWatch Agent",
+    "ii  amd64-microcode                               3.20250311.1ubuntu0.24.04.1              amd64        Processor microcode firmware for AMD CPUs",
+    "ii  anacron                                       2.3-39ubuntu2                            amd64        cron-like program that doesn't go by time",
+    "ii  apg                                           2.2.3.dfsg.1-5build3                     amd64        Automated Password Generator - Standalone version",
+    "ii  apparmor                                      4.0.1really4.0.1-0ubuntu0.24.04.5        amd64        user-space parser utility for AppArmor",
+    "ii  apport                                        2.28.1-0ubuntu3.8                        all          automatically generate crash reports for debugging",
+    "ii  apport-core-dump-handler                      2.28.1-0ubuntu3.8                        all          Kernel core dump handler for Apport",
+    "ii  apport-gtk                                    2.28.1-0ubuntu3.8                        all          GTK+ frontend for the apport crash report system",
+    "ii  apport-symptoms                               0.25                                     all          symptom scripts for apport",
+    "ii  appstream                                     1.0.2-1build6                            amd64        Software component metadata management",
+    "ii  apt                                           2.8.3                                    amd64        commandline package manager",
+    "ii  apt-config-icons                              1.0.2-1build6                            all          APT configuration snippet to enable icon downloads",
+    "ii  apt-config-icons-hidpi                        1.0.2-1build6                            all          APT configuration snippet to enable HiDPI icon downloads",
+    "ii  apt-transport-https                           2.8.3                                    all          transitional package for https support",
+    "ii  apt-utils                                     2.8.3                                    amd64        package management related utility programs",
+    "ii  aptdaemon                                     1.1.1+bzr982-0ubuntu44                   all          transaction based package management service",
+    "ii  aptdaemon-data                                1.1.1+bzr982-0ubuntu44                   all          data files for clients",
+    "ii  aspell                                        0.60.8.1-1build1                         amd64        GNU Aspell spell-checker",
+    "ii  aspell-en                                     2020.12.07-0-1                           all          English dictionary for GNU Aspell",
+    "ii  at                                            3.2.5-2.1ubuntu3                         amd64        Delayed job execution and batch processing",
+    "ii  at-spi2-common                                2.52.0-1build1                           all          Assistive Technology Service Provider Interface (common files)",
+    "ii  at-spi2-core                                  2.52.0-1build1                           amd64        Assistive Technology Service Provider Interface (D-Bus core)",
+    "ii  avahi-daemon                                  0.8-13ubuntu6                            amd64        Avahi mDNS/DNS-SD daemon",
+    "ii  baobab                                        46.0-1build1                             amd64        GNOME disk usage analyzer",
+    "ii  base-files                                    13ubuntu10.3                             amd64        Debian base system miscellaneous files",
+    "ii  base-passwd                                   3.6.3build1                              amd64        Debian base system master password and group files",
+    "ii  bash                                          5.2.21-2ubuntu4                          amd64        GNU Bourne Again SHell",
+    "ii  bash-completion                               1:2.11-8                                 all          programmable completion for the bash shell",
+    "ii  bc                                            1.07.1-3ubuntu4                          amd64        GNU bc arbitrary precision calculator language",
+    "ii  bcache-tools                                  1.0.8-5build1                            amd64        bcache userspace tools",
+    "ii  bind9-dnsutils                                1:9.18.39-0ubuntu0.24.04.2               amd64        Clients provided with BIND 9",
+    "ii  bind9-host                                    1:9.18.39-0ubuntu0.24.04.2               amd64        DNS Lookup Utility",
+    "ii  bind9-libs:amd64                              1:9.18.39-0ubuntu0.24.04.2               amd64        Shared Libraries used by BIND 9",
+    "ii  binutils                                      2.42-4ubuntu2.10                         amd64        GNU assembler, linker and binary utilities",
+    "ii  binutils-common:amd64                         2.42-4ubuntu2.10                         amd64        Common files for the GNU assembler, linker and binary utilities",
+    "ii  binutils-x86-64-linux-gnu                     2.42-4ubuntu2.10                         amd64        GNU binary utilities, for x86-64-linux-gnu target"
+  ]
+}</pre>
+        </body>
+        </html>
+        

@@ -1,0 +1,12 @@
+{"timestamp": "2026-10-30T11:46:41.099602", "event_type": "evidence_collection", "evidence_type": "system_logs", "status": "SUCCESS", "details": {"items_count": 2}}
+{"timestamp": "2026-10-30T11:46:41.108939", "event_type": "evidence_collection", "evidence_type": "access_logs", "status": "SUCCESS", "details": {"items_count": 2}}
+{"timestamp": "2026-10-30T11:46:41.180320", "event_type": "evidence_collection", "evidence_type": "configuration_snapshots", "status": "SUCCESS", "details": {"items_count": 2}}
+{"timestamp": "2026-10-30T11:46:41.181446", "event_type": "report_generation", "report_type": "json", "output_path": "../output/compliance_report.json", "status": "SUCCESS"}
+{"timestamp": "2026-10-30T11:46:41.182420", "event_type": "report_generation", "report_type": "html", "output_path": "../output/compliance_report.html", "status": "SUCCESS"}
+{"timestamp": "2026-10-30T11:46:41.182710", "event_type": "report_generation", "report_type": "csv", "output_path": "../output/compliance_report.csv", "status": "SUCCESS"}
+{"timestamp": "2026-10-30T11:46:41.940483", "event_type": "evidence_collection", "evidence_type": "system_logs", "status": "SUCCESS", "details": {"items_count": 2}}
+{"timestamp": "2026-10-30T11:46:41.948257", "event_type": "evidence_collection", "evidence_type": "access_logs", "status": "SUCCESS", "details": {"items_count": 2}}
+{"timestamp": "2026-10-30T11:46:42.021196", "event_type": "evidence_collection", "evidence_type": "configuration_snapshots", "status": "SUCCESS", "details": {"items_count": 2}}
+{"timestamp": "2026-10-30T11:46:42.022292", "event_type": "report_generation", "report_type": "json", "output_path": "../output/compliance_report.json", "status": "SUCCESS"}
+{"timestamp": "2026-10-30T11:46:42.023441", "event_type": "report_generation", "report_type": "html", "output_path": "../output/compliance_report.html", "status": "SUCCESS"}
+{"timestamp": "2026-10-30T11:46:42.023806", "event_type": "report_generation", "report_type": "csv", "output_path": "../output/compliance_report.csv", "status": "SUCCESS"}
