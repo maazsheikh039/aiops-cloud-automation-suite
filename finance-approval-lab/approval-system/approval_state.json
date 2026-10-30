@@ -1,0 +1,20 @@
+{
+  "REQ-1793353063": {
+    "request_id": "REQ-1793353063",
+    "amount": 2000.0,
+    "requester": "dev_user",
+    "description": "Production AWS Cluster Upgrade",
+    "gate": "budget_review",
+    "required_approvals": 2,
+    "authorized_approvers": [
+      "finance_manager",
+      "team_lead"
+    ],
+    "approvals": [
+      "finance_manager",
+      "team_lead"
+    ],
+    "status": "APPROVED",
+    "created_at": "2026-10-30T09:37:43.137399"
+  }
+}

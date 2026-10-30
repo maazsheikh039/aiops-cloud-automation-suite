@@ -1,0 +1,4 @@
+{"timestamp": "2026-10-30T09:37:43.137652", "event_type": "request_created", "data": {"request_id": "REQ-1793353063", "amount": 2000.0, "requester": "dev_user", "description": "Production AWS Cluster Upgrade", "gate": "budget_review", "required_approvals": 2, "authorized_approvers": ["finance_manager", "team_lead"], "approvals": [], "status": "PENDING", "created_at": "2026-10-30T09:37:43.137399"}}
+{"timestamp": "2026-10-30T09:37:43.314225", "event_type": "approval_recorded", "data": {"request_id": "REQ-1793353063", "approver": "finance_manager"}}
+{"timestamp": "2026-10-30T09:37:43.549092", "event_type": "approval_recorded", "data": {"request_id": "REQ-1793353063", "approver": "team_lead"}}
+{"timestamp": "2026-10-30T09:37:43.549242", "event_type": "request_fully_approved", "data": {"request_id": "REQ-1793353063"}}
