@@ -1,0 +1,29 @@
+ 
+ -------------- celery@ip-172-31-10-180 v5.6.3 (recovery)
+--- ***** ----- 
+-- ******* ---- Linux-6.14.0-1018-aws-x86_64-with-glibc2.39 2026-10-30 12:11:20
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         automation_platform:0x7cabb7cdd8e0
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 2 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . workers.task_worker.execute_automation_task
+
+[2026-10-30 12:11:20,914: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-30 12:11:20,920: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-30 12:11:21,936: INFO/MainProcess] mingle: all alone
+[2026-10-30 12:11:21,957: INFO/MainProcess] celery@ip-172-31-10-180 ready.
+[2026-10-30 12:11:28,284: INFO/MainProcess] Task workers.task_worker.execute_automation_task[20261030-1b31ace6] received
+[2026-10-30 12:11:28,288: WARNING/ForkPoolWorker-1] [2026-10-30T12:11:28.288265] Starting task 20261030-1b31ace6 of type 'backup'
+[2026-10-30 12:11:29,220: INFO/MainProcess] Task workers.task_worker.execute_automation_task[20261030-40d8d001] received
+[2026-10-30 12:11:29,224: WARNING/ForkPoolWorker-2] [2026-10-30T12:11:29.224269] Starting task 20261030-40d8d001 of type 'backup'
+[2026-10-30 12:11:31,315: INFO/ForkPoolWorker-1] Task workers.task_worker.execute_automation_task[20261030-1b31ace6] succeeded in 3.027794044000018s: {'task_id': '20261030-1b31ace6', 'task_type': 'backup', 'parameters': {'path': '/data', 'destination': '/backup'}, 'status': 'COMPLETED', 'updated_at': '2026-10-30T12:11:31.308434', 'result': 'Successfully backed up /data to /backup'}
+[2026-10-30 12:11:32,248: INFO/ForkPoolWorker-2] Task workers.task_worker.execute_automation_task[20261030-40d8d001] succeeded in 3.024730611999985s: {'task_id': '20261030-40d8d001', 'task_type': 'backup', 'parameters': {'path': '/data', 'destination': '/backup'}, 'status': 'COMPLETED', 'updated_at': '2026-10-30T12:11:32.241415', 'result': 'Successfully backed up /data to /backup'}

@@ -1,0 +1,18 @@
+ * Serving Flask app 'automation_api'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.10.180:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 144-402-386
+/home/ubuntu/automation-platform/api/automation_api.py:44: DeprecationWarning: Call to deprecated setex. (Use 'set' instead.) -- Deprecated since version 2.6.12.
+  r.setex(f"task:{task_id}", 3600, json.dumps(task_meta))
+127.0.0.1 - - [30/Oct/2026 12:11:28] "[35m[1mPOST /api/tasks HTTP/1.1[0m" 201 -
+127.0.0.1 - - [30/Oct/2026 12:11:29] "[35m[1mPOST /api/tasks HTTP/1.1[0m" 201 -
+127.0.0.1 - - [30/Oct/2026 12:12:07] "[33mGET /api/tasks/7766 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [30/Oct/2026 12:12:08] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 12:12:08] "GET /api/tasks HTTP/1.1" 200 -
+127.0.0.1 - - [30/Oct/2026 12:12:16] "[31m[1mPOST /api/tasks HTTP/1.1[0m" 400 -
