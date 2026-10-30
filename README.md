@@ -116,4 +116,4 @@ Each project directory contains its own README with setup requirements and opera
 
 ## Repository Scope
 
-This repository is a collection of independent projects and technical demonstrations. It does not provide a suite-wide installer or a single command to run every project. No repository-wide license file was present during this review.
+This repository is a collection of independent projects and technical demonstrations. It does not provide a suite-wide installer or a single command to run every project. This repository is distributed under the [MIT License](LICENSE).
